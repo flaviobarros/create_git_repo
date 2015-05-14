@@ -3,7 +3,7 @@
 
 import os
 
-usuario = "flaviobarros"
+usuario = "seu_usuario"
 
 print 'Defina o título do projeto: '
 projectname = raw_input()
