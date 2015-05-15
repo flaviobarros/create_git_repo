@@ -1,15 +1,12 @@
-#!/usr/bin/env python
-# This Python file uses the following encoding: utf-8
+#!/usr/bin/env python3
 
 import os
 
 usuario = "seu_usuario"
 
-print 'Defina o título do projeto: '
-projectname = raw_input()
+projectname = input("Defina o título do projeto: ")
 
-print 'Defina a descrição do projeto: '
-description = raw_input()
+description = input("Defina a descrição do projeto: ")
 
 comando = 'curl -u ' + usuario + ' https://api.github.com/user/repos ' + "'" + '-d' + '{"name":"' + projectname + '","description":"' + description + '"}' + "'"
 
